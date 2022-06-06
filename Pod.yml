@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name:  nginx
+spec:
+  containers:
+  - name:  webserver
+    image:  nginx:latest
+    ports:
+    - containerPort:  80
+
+# kubectl apply -f Pod.yml
+# kubectl delete -f Pod.yml
+# kubectl get all

@@ -1,0 +1,130 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "config-server 8888",
+            "request": "launch",
+            "mainClass": "com.udemy.spring.cloud.server.config.configserver.ConfigServerApplication",
+            "projectName": "config-server",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "eureka-server 8761",
+            "request": "launch",
+            "mainClass": "com.udemy.spring.cloud.server.eureka.eurekaserver.EurekaServerApplication",
+            "projectName": "eureka-server",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "service-user-role random port",
+            "request": "launch",
+            "mainClass": "com.udemy.spring.cloud.user.ServiceUserRoleApplication",
+            "projectName": "service-user-role",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "service-auth 9100",
+            "request": "launch",
+            "mainClass": "com.udemy.spring.cloud.oauth.ServiceAuthApplication",
+            "projectName": "service-auth",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "service-producer 8001",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.udemy.spring.cloud.service.producer.app.ServiceProducerApplication",
+            "projectName": "service-producer",
+            "args": "",
+            "vmArgs": "-Dserver.port=8001",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "service-producer random port",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.udemy.spring.cloud.service.producer.app.ServiceProducerApplication",
+            "projectName": "service-producer",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "service-client 8002",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.udemy.spring.cloud.service.item.app.ServiceItemApplication",
+            "projectName": "service-client",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "service-email 8989",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.udemy.spring.cloud.email.ServiceEmailApplication",
+            "projectName": "service-email",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "service-register 9090",
+            "request": "launch",
+            "mainClass": "com.udemy.spring.cloud.service.register.app.ServiceRegisterApplication",
+            "projectName": "service-register",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "spring-gateway 8090",
+            "request": "launch",
+            "mainClass": "com.udemy.spring.cloud.gateway.SpringGatewayApplication",
+            "projectName": "spring-gateway",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "type": "java",
+            "name": "zuul-gateway 8090",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.udemy.spring.cloud.gateway.zuul.zuulgateway.ZuulGatewayApplication",
+            "projectName": "zuul-gateway",
+            "args": "",
+            "vmArgs": "",
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}

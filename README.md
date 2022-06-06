@@ -1,2 +1,0 @@
-# kubernetesTrainning
-Udemy Kubernetes
