@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: nginx-testing
+  name: replica-set
 spec:
   replicas: 2
   selector:
@@ -23,3 +23,4 @@ spec:
 # kubectl apply -f ReplicaSet.yml
 # kubectl delete -f ReplicaSet.yml
 # kubectl get all
+# kubectl get all -o wide
