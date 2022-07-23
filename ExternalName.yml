@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth
+  namespace: default
+spec:
+  type: ExternalName
+  externalName: miservicio.com
+
+# kubectl apply -f ReplicaSet.yml
+# kubectl apply -f ExternalName.yml
+# kubectl get all
+# kubectl exec -it replica-set-RANDOM bash
+  # apt update
+  # apt install dnsutils [y]
+  # host auth
+    # Debería mostrar el externalName miservicio.com

@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-port
+  namespace: default
+spec:
+  type: NodePort # Accesible desde fuera del cluster con la ip de minikube
+  selector: # redirecciona el trafico a cualquier pod q cumpla con las etiquetas
+    app: nginx
+    environment: testing
+  ports:
+  - protocol: TCP
+    port: 80 # Puerto al cual se le deben hacer las peticiones al cluster
+    targetPort: 80 # puerto al que redirecciona internamente el tráfico
+    nodePort: 30009 # define un puerto fijo para que pueda ser consumido el servicio desde fuera de minkube
+
+# kubectl apply -f NodePort.yml
+# kubectl delete -f NodePort.yml
+# kubectl get all
+# kubectl get all -o wide
+
+# minikube ssh
+# curl [CLUSTER-IP]
+
+# Comando para obtener la ip de minikube
+# minikube service node-port --url
+# curl [URL-SERVICE]
