@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pv-volume-claim-1
+  namespace: default
+spec:
+  storageClassName: manual
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+
+# kubectl get pvc
+# kubectl apply -f pv-volume-claim-1.yml
+# kubectl describe pvc pv-volume-claim-1
+# kubectl delete -f pv-volume-claim-1.yml
